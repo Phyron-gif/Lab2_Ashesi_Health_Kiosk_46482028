@@ -33,6 +33,13 @@ public class AshesiHealthKiosk {
                         System.out.println("you are overweight");
                         }
                         break;
+                        case 2:
+                        System.out.println("Enter your required dosage in multiples of 250t mg");
+                        double dosage = systemService.nextDouble();
+                        int pharmacyDispense = 250;
+                        double numberOfTablet = dosage/pharmacyDispense;
+                        System.out.println("your number of tablets to be taken is "+ (int)numberOfTablet);
+
                         
                     }
                     
