@@ -1,1 +1,0 @@
-# Lab2_Ashesi_Health_Kiosk_46482028
