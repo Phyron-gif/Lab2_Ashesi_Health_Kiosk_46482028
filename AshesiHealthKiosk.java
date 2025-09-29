@@ -8,21 +8,21 @@ public class AshesiHealthKiosk {
         String Service = systemService.nextLine().toUpperCase();
         switch(Service){
             case "P":
-                System.out.println(" go to the Pharmacy desk");
+                System.out.println(" Go to  the Pharmacy desk");
                 break;
             case "L":
-                System.out.println(" go to the Lab desk");
+                System.out.println(" Go to the Lab desk");
                 break;
             case "T":
-                System.out.println(" go to the Triage desk");
+                System.out.println(" Go to  Triage desk");
                 break;
             case "C" :
-                System.out.println(" go to the Counseling desk");
+                System.out.println(" Go to  to the Counseling desk");
             default:
                 System.out.println(" Invalid service code");
-                
-
         }
+        
+
         
 
 
