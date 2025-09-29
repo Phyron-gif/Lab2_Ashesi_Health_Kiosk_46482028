@@ -34,11 +34,26 @@ public class AshesiHealthKiosk {
                         }
                         break;
                         case 2:
-                        System.out.println("Enter your required dosage in multiples of 250t mg");
+                        System.out.println("Enter your required dosage in multiples of 250 mg");
                         double dosage = systemService.nextDouble();
                         int pharmacyDispense = 250;
                         double numberOfTablet = dosage/pharmacyDispense;
                         System.out.println("your number of tablets to be taken is "+ (int)numberOfTablet);
+                        break;
+                        case 3:
+                        System.out.println("Enter an angle in degrees");
+                        double angle = systemService.nextDouble();
+                        double sinValue = Math.sin(angle);
+                        double cosValue = Math.cos(angle);
+                        sinValue = Math.round(sinValue*1000)/1000.0;
+                        cosValue = Math.round(cosValue*1000)/1000.0;
+                        System.out.println("Angle in radians is : " + angle);
+                        System.out.println("sin(angle) is " + sinValue);
+                        System.out.println("cos(angle) is " + cosValue);
+
+
+
+                        
 
                         
                     }
@@ -53,6 +68,7 @@ public class AshesiHealthKiosk {
                 break;
             case "C" :
                 System.out.println(" Go to  to the Counseling desk");
+                break;
             default:
                 System.out.println(" Invalid service code");
             }
