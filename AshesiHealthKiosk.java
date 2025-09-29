@@ -21,10 +21,32 @@ public class AshesiHealthKiosk {
             default:
                 System.out.println(" Invalid service code");
         }
-        
+        System.out.println("Kindly enter weight in kilograms");
+        double weight = systemService.nextDouble();
+        System.out.println("Kindly enter height in meters");
+        double height= systemService.nextDouble();
+        double bmi = weight/Math.pow(height,2);
+        bmi = Math.round((bmi*10)/10.0);
+        if (bmi < 18.5){
+        System.out.println("you are underweight");
+
+        }
+        else if (bmi<=24.9 || bmi >= 18.5){
+            System.out.println("your weight is normal");
+        }
+        else if (bmi<=29.9 || bmi >= 25.0){
+            System.out.println("you are overweight");
+
+        }
+        else {
+            System.out.println("you are obesed");
+        }
+
+        }
+
+
 
         
 
 
     }
-}
